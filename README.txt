@@ -1,4 +1,6 @@
 
+step 1: windows 环境 启动redis
+step 2: windows 环境 启动consul
 
 查询接口：
 1.启动portal
