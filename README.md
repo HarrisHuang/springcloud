@@ -1,5 +1,8 @@
 # springcloud
 
+# 这个工程主要是用 spring cloud boot + consul
+前端用的是Angularjs 代码示例可以看portal
+
 step 1: windows 环境 启动redis
 
 step 2: windows 环境 启动consul
