@@ -1,0 +1,23 @@
+(function(){
+	"use strict";
+	angular
+		.module("app.pageOne")
+		.service("pageOneService",pageOneService)
+	
+	pageOneService.$inject = ["$http", "$q", "httpService"];
+
+	function pageOneService($http, $q, httpService) {
+		this.getData = getData;
+		
+		function getData() {
+			return httpService.httpRequest({
+				url:"api/module.json",
+				async: true,
+				type:"GET",
+				success:function(response) {
+					console.log("service",response);
+				};
+			});
+		}
+	}
+})()

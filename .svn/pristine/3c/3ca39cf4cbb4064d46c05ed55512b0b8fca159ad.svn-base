@@ -1,0 +1,291 @@
+/******************************************/
+/****** 添加规则： 以wisdomPark-ui-为前缀,
+例如: wisdomPark-ui-footer*********/
+/******************************************/
+
+
+/******************************************/
+/*============  页面背景颜色配置  ===========*/
+/******************************************/
+
+/*
+.smart-style-3 body, body.smart-style-3 {
+    background-color: #f1f2f4 !important;
+}
+*/
+
+
+/******************************************/
+/*===========  顶部背景和logo配置  ==========*/
+/******************************************/
+/*
+#header {
+    background-color: #e63636 !important;
+    background-image: url(../img/portal-web-logo.png) !important;
+}
+*/
+
+/******************************************/
+/*============  消息模块位置配置  ===========*/
+/******************************************/
+/*
+#logo-group .ajax-dropdown{
+    top: 85px;
+    right: 60px;
+}
+*/
+
+/******************************************/
+/*===========  消息模块位箭头置配置  =========*/
+/******************************************/
+/*
+#logo-group .ajax-dropdown:after,
+#logo-group .ajax-dropdown:before {
+    right: 175px;
+}
+*/
+
+/******************************************/
+/*===========  顶部快捷功能位置配置  =========*/
+/******************************************/
+/*
+#quicklinks{
+    right: 60px;
+    top: 85px;
+}
+*/
+
+/******************************************/
+/*=========  顶部快捷功能箭头位置配置  ========*/
+/******************************************/
+/*
+#quicklinks .custom-arrow {
+    top: -10px;
+    right: 120px;
+}
+*/
+
+/******************************************/
+/*=========  顶部用户下拉模块位置配置  ========*/
+/******************************************/
+/*
+#shortcut {
+    right: 20px;
+    top: 85px;
+}
+*/
+
+/******************************************/
+/*========  顶部用户下拉模块位箭头置配置  ======*/
+/******************************************/
+/*
+#shortcut .custom-arrow{
+    right: 15px;
+    top: -10px;
+}
+*/
+
+/******************************************/
+/*==========  左边菜单字体颜色配置  ==========*/
+/******************************************/
+/*
+#quicklinks ul li a {
+    font-size: 14px;
+    color: #7C7C7C;
+}
+#quicklinks ul li a:hover {
+    color: #E62425;
+}
+*/
+
+
+
+
+
+/******************************************/
+/* 政府类项目详情专用  */
+/******************************************/
+.projectProgress {
+    margin: 0 -15px;
+}
+
+.projectProgress table {
+    border-collapse: separate;
+    border-spacing: 15px;
+    margin-bottom: 0;
+}
+
+.projectProgress table td, table.projectProgress tr {
+    border-top: none !important;
+}
+
+.projectProgress table > tbody > tr > td {
+    border: 1px solid #dadada !important;
+    cursor: pointer;
+    text-align: left;
+}
+
+.projectProgress table > tbody > tr > td i.fa {
+    margin-right: 10px;
+    font-size: 32px;
+}
+
+.projectProgress table > tbody > tr > td i.fa-check-circle {
+    color: #00dc91;
+}
+
+.projectProgress table > tbody > tr > td i.fa-times-circle {
+    color: #e63636;
+}
+
+.select2-container-multi .select2-choices .select2-search-field input {
+	line-height : 1;
+}
+/* 食谱安排专用 */
+.wisdomPark-ui-canteenListByWeek-group {
+	border: 1px solid #dadada;
+}
+
+.wisdomPark-ui-canteenListByWeek+.wisdomPark-ui-canteenListByWeek {
+	border-top: 1px solid #dadada;
+}
+
+.wisdomPark-ui-canteenListByWeek {
+	display: -webkit-flex;
+	display: flex;
+	align-items: stretch;
+}
+
+.wisdomPark-ui-canteenListByWeek>li {
+	flex: 1;
+}
+
+.wisdomPark-ui-canteenListByWeek:not(:nth-child(1))>li {
+	padding: 5px;
+}
+
+.wisdomPark-ui-canteenListByWeek:not(:nth-child(1))>li+li {
+	border-left: 1px solid #dadada;
+}
+
+.wisdomPark-ui-canteenListByWeek-panel {
+	position : relative;
+	height: 100%;
+}
+.wisdomPark-ui-canteenListByWeek-panelBody {
+	height : -webkit-calc(100% - 52px);
+	height : -moz-calc(100% - 52px);
+	height : calc(100% - 52px);
+}
+.wisdomPark-ui-canteenListByWeek-panel.breakFood {
+	border: 1px solid #e5f8dd;
+}
+
+.wisdomPark-ui-canteenListByWeek-panel.breakFood .wisdomPark-ui-canteenListByWeek-panelHead {
+	background-color: #e5f8dd;
+	color: #36b681;
+}
+
+.wisdomPark-ui-canteenListByWeek-panel.breakFood .wisdomPark-ui-canteenListByWeek-panelBody {
+	background-color: #f2fbee;
+}
+
+.wisdomPark-ui-canteenListByWeek-panel.lunch {
+	border: 1px solid #d9f2ff;
+}
+
+.wisdomPark-ui-canteenListByWeek-panel.lunch .wisdomPark-ui-canteenListByWeek-panelHead {
+	background-color: #d9f2ff;
+	color: #4d9bcf;
+}
+
+.wisdomPark-ui-canteenListByWeek-panel.lunch .wisdomPark-ui-canteenListByWeek-panelBody
+	{
+	background-color: #ecf8ff;
+}
+
+.wisdomPark-ui-canteenListByWeek-panelHead,
+.wisdomPark-ui-canteenListByWeek-panelBody {
+	padding: 10px;
+}
+
+.wisdomPark-ui-canteenListByWeek-panelHead {
+	font-size: 18px;
+	text-align: center;
+}
+.wisdomPark-ui-canteenListByWeek-panelBody {
+	margin-top : 2px;
+}
+.wisdomPark-ui-canteenListByWeek-panelBody ul li {
+	height: 32px;
+	line-height: 32px;
+	overflow: hidden;
+	position: relative;
+	padding-right: 20px;
+}
+
+.panelBodyClose {
+	position: absolute;
+	right: 1px;
+	top: 0;
+	color : #888;
+	font-weight : 100;
+}
+/* inbox */
+.inbox-animation-container {
+	padding: 0;
+}
+.wisdomPark-ui-email .router-animation-container,
+.inbox-body .table-wrap,
+.inbox-nav-bar,
+.inbox-side-bar{
+	background: transparent; 
+}
+.wisdomPark-ui-email {
+	border-radius: 4px;
+	background: #fff; 
+	border: 1px solid #cbcdd1;
+	box-shadow: 0px 4px 6px rgba(202, 202, 202, 0.25);
+}
+/* page */
+.pagination {
+	margin: 20px 0 -5px;
+	display: inline-block;
+}
+.pagination>li:first-child>a,
+.pagination>li:first-child>span
+{
+	border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.pagination>li:last-child>a,
+.pagination>li:last-child>span
+{
+	border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.pagination>li>a,
+.pagination>li>span
+{
+	color : #333;
+	box-shadow : none;
+}
+.pagination>li>a:focus,
+.pagination>li>span:focus
+{
+	color : #333;
+	background-color: #fff;
+}
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover,
+.pagination>li>a:hover,
+.pagination>li>span:hover
+{
+	color : #fff;
+	background-color: #ea2929;
+    border-color: #ea2929;
+}

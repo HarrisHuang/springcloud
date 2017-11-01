@@ -1,0 +1,17 @@
+[
+	{
+		"name":"pageOne",
+		"url": "/pageOne",
+		"module":"app.pageOne"
+	},
+	{
+		"name":"pageTwo",
+		"url": "/pageTwo",
+		"module":"app.pageTwo"
+	},
+	{
+		"name":"pageTree",
+		"url": "/pageTree",
+		"module":"app.pageTree"
+	}
+]

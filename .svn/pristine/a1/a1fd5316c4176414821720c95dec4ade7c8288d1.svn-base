@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>智慧城市内部门户</title>
+    <!-- Custom CSS -->
+    <link href="/styles/css/custom.error.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<section id="wrapper" class="error-page">
+    <div class="error-box">
+        <div class="error-body text-center">
+            <h1 class="text-danger">400</h1>
+            <h3 class="text-uppercase">亲，页面没有找到哦！</h3>
+            <p class="text-muted m-t-30 m-b-30">似乎您所寻找的网页已移动或丢失了！请点击下面按钮返回首页或者联系<a
+                    href="maillto:admin@admin.com">管理员</a></p>
+            <p class="text-muted m-t-30 m-b-30"><span id="time" style="color: red">10</span>秒后跳转到首页面，或者点击下面按钮立即返回首页</p>
+            <a href="/#/home" class="wisdomPark-ui-btn wisdomPark-ui-btn-white m-b-40">&lt; 返回首页</a>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    (function () {
+        'use strict';
+
+        var timer = 0,
+            time = 10 ,
+            timeEle = document.getElementById("time");
+
+
+        function delayed() {
+            timer = setTimeout(function () {
+                time--;
+                timeEle.innerText = time;
+                if(time === 0){
+                    clearTimeout(timer);
+                    window.location.href = "/#/home";
+                }else {
+                    delayed();
+                }
+            }, 1000);
+        }
+
+        delayed();
+    })()
+</script>
+
+</body>
+
+</html>

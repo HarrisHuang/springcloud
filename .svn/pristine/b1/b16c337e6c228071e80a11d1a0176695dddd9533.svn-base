@@ -1,0 +1,26 @@
+/**     
+ * @FileName: AccountNumberMapper.java   
+ * @Package:com.cloud.paas.portal.persistence   
+ * @Description: TODO  
+ * @author: huangyan    
+ * @date:2017年9月1日 下午2:50:11   
+ */
+package com.cloud.paas.portal.persistence;
+
+import java.util.List;
+
+import com.bzwframework.persistencelayer.mybatis.BaseMapper;
+import com.cloud.paas.portal.domain.AccountNumber;
+import com.cloud.paas.portal.domain.condition.AccountNumberCondition;
+
+/**  
+ * @ClassName: AccountNumberMapper   
+ * @Description: TODO  
+ * @author: huangyan  
+ * @date:2017年9月1日 下午2:50:11     
+ */
+public interface AccountNumberMapper extends BaseMapper<AccountNumber>{
+	
+	List<AccountNumber> list(AccountNumberCondition accountNumberCondition);
+
+}

@@ -1,0 +1,24 @@
+server:
+  port: 6006
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: cloud-paas-monitor   
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        ip-address: localhost
+        prefer-ip-address: true
+        tags:
+        - huangyan
+  redis:
+    host: localhost
+    port: 6379
+  cache:
+    ehcache:
+      config: classpath:ehcacheConfig.xml

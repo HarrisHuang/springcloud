@@ -1,0 +1,4 @@
+查询接口：
+1.启动portal
+2.启动api-gateway
+3.浏览器中输入：http://localhost/swagger-ui.html

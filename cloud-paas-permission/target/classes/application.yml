@@ -1,0 +1,17 @@
+server:
+  port: 6008
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: cloud-paas-permission
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        ip-address: localhost
+        tags:
+        - huangyan

@@ -1,0 +1,14 @@
+(function(){
+	"use strict";
+	angular
+		.module("app.pageOne")
+		.controller("pageOneController",pageOneController)
+	
+	pageOneController.$inject = ["$scope","pageOneService","constant"];
+	
+	function pageOneController($scope,pageOneService,constant) {
+		$scope.name = constant.name == "Joker" ? "Luffy" : "Lucy";
+		$scope.picColor = ["label-default","label-primary","label-success","label-info","label-warning","label-danger"];
+		$scope.list = ["阿里巴巴","腾讯","网易","百度","360"];
+	};
+})();

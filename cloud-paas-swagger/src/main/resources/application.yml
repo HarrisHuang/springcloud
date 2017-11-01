@@ -1,0 +1,24 @@
+server: 
+  port: 6007
+  compression: 
+    enabled: true
+  tomcat: 
+    uri-encoding: UTF-8
+
+spring: 
+  application: 
+    name: cloud-paas-swagger
+  cloud: 
+    consul: 
+      host: localhost
+      port: 8500 
+      discovery:
+        ip-address: localhost
+        prefer-ip-address: true
+        tags: huangyan
+  redis:
+    host: localhost
+    port: 6379
+  cache:
+    ehcache:
+      config: classpath:ehcacheConfig.xml

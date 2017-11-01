@@ -1,0 +1,28 @@
+(function(){
+	"use strict";
+	angular
+		.module("app.login")
+		.service("loginService",loginService)
+	
+	function loginService() {
+		this.list = list;
+		
+		/**
+		 * 
+		 */
+		function list() {
+			
+//			return httpService.http({
+//				domain : "cloud-paas-portal",
+//				url : "account/list",
+//				method : "POST",
+//				data : organ.organId,
+//				successCallback : function(msg) {
+//					
+//				}
+//			});
+		}
+		
+		
+	}
+})()

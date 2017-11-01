@@ -1,0 +1,52 @@
+(function(){
+	"use strict";
+	angular
+		.module("app.login")
+		.controller("loginController",loginController)
+	
+	loginController.$inject = ["$scope","loginService","constant"];
+	
+	function loginController($scope,loginService,constant) {
+		
+		var vm = this;
+		activate();
+		
+		function activate() {
+			vm.searchParam = {
+					page : 1,
+					pageSize : 10,
+					sortParamList : []
+				};
+			
+			vm.accountNumberList = {};
+			
+			$scope.name = constant.name == "Joker" ? "Luffy" : "Lucy";
+			$scope.picColor = ["label-default","label-primary","label-success","label-info","label-warning","label-danger"];
+			$scope.list = ["阿里巴巴","腾讯","网易","百度","360"];
+			
+			vm.login = function(accountNumber) {
+				console.log("username:"+ accountNumber.username +","+"password:"+accountNumber.password);
+			}
+			
+			$http({ 
+				method :'POST', 
+				url : 'http://localhost:8080/shopCtrl/buyCrop', 
+				params: { 
+				userId:'1',//memberId 
+				cropId:$scope.cropDetail.cropId, 
+				buyNum:$scope.cropDetail.quantity, 
+				coin:$scope.cropDetail.totalCoin 
+				} 
+				}).success(function(data,status,headers,config) { 
+				alert("success!") 
+				}).error(function(data,status,headers,config){ 
+				alert(status) 
+				}); 
+			
+		}//activate function end
+		
+		
+		
+	
+	}
+})();

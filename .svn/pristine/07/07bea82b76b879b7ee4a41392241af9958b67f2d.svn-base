@@ -1,0 +1,58 @@
+(function(){
+	"use strict";
+	angular
+		.module("app.capp")
+		.constant("constant",{"name":"Joker","age":41})
+		.config(function(){
+			angular.element(document).ready(function(){
+				loadMenu();
+			});
+			function loadMenu() {
+				var menu = document.getElementById("menu");
+				var menus = menu.children;
+				for (var i=0;i<menus.length;i++) {
+					menus[i].children[0].onclick=function(){
+						var that = this;
+						if (that.isShow) {
+							setCSS(getNextElement(that),{
+								opacity:0,
+								transform: "scale(0.8)",
+								visibility: "hidden",
+							})
+							setTimeout(function(){
+								setCSS(getNextElement(that),{
+									display:"none",
+								})
+							},350)
+							that.isShow=false;
+						}else {
+							setCSS(getNextElement(that),{
+								display:"block",
+							})
+							setTimeout(function(){
+								setCSS(getNextElement(that),{
+									opacity:1,
+									transform: "scale(1)",
+									display:"block",
+									visibility: "visible",
+								});
+							},10)
+							that.isShow=true;
+						}
+					}
+				}
+				function setCSS(obj,attr) {
+					for (var i in attr) {
+						obj.style[i] = attr[i];
+					}
+				}
+				function getNextElement(node){
+			        var NextElementNode = node.nextSibling;
+			        while(NextElementNode.nodeValue != null){
+			            NextElementNode = NextElementNode.nextSibling
+			        }
+			        return NextElementNode;
+			    }
+			}
+		});
+})()

@@ -1,0 +1,13 @@
+(function(){
+	/*
+	 * 1.利用ui-router实现单页面应用
+	 * 2.利用依赖与注入减少实例
+	 * 3.实现MVC数据结构分离
+	 */
+	angular.module("app",["app.capp"]);
+	angular.module("app.capp",["ui.router","app"]);
+	
+	angular.element(document).ready(function(){
+		angular.bootstrap(document,["app"]);
+	});
+})()

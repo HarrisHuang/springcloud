@@ -1,0 +1,14 @@
+(function(){
+	"use strict";
+	angular
+		.module("app.capp")
+		.controller("bootRouter1Controller",bootRouter1Controller)
+	
+	bootRouter1Controller.$inject = ["$scope","bootService","constant"];
+	
+	function bootRouter1Controller($scope,bootService,constant) {
+		$scope.name = constant.name == "Joker" ? "Luffy" : "Lucy";
+		$scope.picColor = ["label-default","label-primary","label-success","label-info","label-warning","label-danger"];
+		$scope.list = ["阿里巴巴","腾讯","网易","百度","360"];
+	}
+})()

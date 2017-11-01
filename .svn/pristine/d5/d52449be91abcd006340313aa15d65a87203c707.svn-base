@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link href="styles/css/layout.css" rel="stylesheet"/>
+		<title></title>
+	</head>
+	<body>
+		<div id="header">
+			<div id="logo">Logo</div>
+			<ul id="menu">
+				<li>
+					<a href="javascript:void(0);">按钮1</a>
+					<ul class="menu_List">
+						<li><a href="javascript:void(0);">按钮1list1</a></li>
+						<li><a href="javascript:void(0);">按钮1list2</a></li>
+						<li><a href="javascript:void(0);">按钮1list3</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);">按钮2</a>
+					<ul class="menu_List">
+						<li><a href="javascript:void(0);">按钮2list1</a></li>
+						<li><a href="javascript:void(0);">按钮2list2</a></li>
+						<li><a href="javascript:void(0);">按钮2list3</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);">按钮3</a>
+					<ul class="menu_List">
+						<li><a href="javascript:void(0);">按钮3list1</a></li>
+						<li><a href="javascript:void(0);">按钮3list2</a></li>
+						<li><a href="javascript:void(0);">按钮3list3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="section">
+			<div id="main">
+				<div id="slider">
+					<ul>
+						<li><a href="javascript:void(0)" data-ui-sref="router1">route1 >></a></li>
+						<li><a href="javascript:void(0)" data-ui-sref="router2">route2 >></a></li>
+					</ul>
+				</div>
+				<div id="content">
+					<div data-ui-view=""></div>
+				</div>
+			</div>
+		</div>
+		<script src="http://apps.bdimg.com/libs/angular.js/1.3.9/angular.min.js"></script>
+		<script src="https://cdn.bootcss.com/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+		<script src="build/rely.js"></script>
+		<script src="build/router.js"></script>
+		<script src="app/module.js"></script>
+		<script src="app/router1/service/router1Service.js"></script>
+		<script src="app/router1/controllers/router1Controllers.js"></script>
+		<script src="app/router2/service/router2Service.js"></script>
+		<script src="app/router2/controllers/router2Controllers.js"></script>
+	</body>
+</html>

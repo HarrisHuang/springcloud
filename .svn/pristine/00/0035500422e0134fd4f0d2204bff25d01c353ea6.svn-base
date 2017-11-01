@@ -1,0 +1,40 @@
+(function(){
+	'use strict'
+	angular
+		.module("app.layout")
+		.controller("headerController",headerController);
+		
+		headerController.$inject = ['$scope'];
+		
+		function headerController($scope) {
+			$scope.name="Logo";
+		}
+})();
+(function(){
+	'use strict'
+	angular
+		.module("app.router")
+		.constant("constant",{"name":"Joker","age":41})
+		.config(routerConfig)
+	
+		function routerConfig($stateProvider){
+			angular.forEach(appConfig.router, function(oRoute,index){
+				var loadArr = [];
+				loadArr.push("app/"+oRoute.name+"/service/"+oRoute.name+"Service.js");
+				loadArr.push("app/"+oRoute.name+"/controllers/"+oRoute.name+"Controllers.js");
+				$stateProvider.state(oRoute.name,{
+					url: oRoute.url,
+					views: {
+						"content": {
+							"templateUrl": "app/"+oRoute.name+"/views/"+oRoute.name+".html"
+						}
+					},
+					resolve: {
+						deps:['$ocLazyLoad', function($ocLazyLoad){
+							return $ocLazyLoad.load(loadArr);
+						}]
+					}
+				});
+			});
+		};
+})();

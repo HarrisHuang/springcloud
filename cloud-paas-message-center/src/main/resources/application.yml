@@ -1,0 +1,32 @@
+server:
+  port: 6005
+  tomcat:
+    uri-encoding: UTF-8
+    
+spring:
+  application:
+    name: cloud-paas-message-center
+  cloud: 
+    consul: 
+      host: localhost
+      port: 8500 
+      discovery:
+        ip-address: localhost
+        prefer-ip-address: true
+        tags: huangyan  
+  
+hystrix: 
+  threadpool: 
+    default: 
+      coreSize: 500
+  command: 
+    paas-file: 
+      execution: 
+        isolation: 
+          thread: 
+            timeoutInMilliseconds: 3600000
+    default: 
+      execution: 
+        isolation: 
+          thread: 
+            timeoutInMilliseconds: 8000  

@@ -1,0 +1,29 @@
+<div id="header" data-ng-controller="headerController">
+	<div id="logo"><a class="glyphicon glyphicon-home"></a></div>
+	<ul id="menu">
+		<li>
+			<a href="javascript:void(0);">按钮1</a>
+			<ul class="menu_List">
+				<li><a href="javascript:void(0);">按钮1list1</a></li>
+				<li><a href="javascript:void(0);">按钮1list2</a></li>
+				<li><a href="javascript:void(0);">按钮1list3</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="javascript:void(0);">按钮2</a>
+			<ul class="menu_List">
+				<li><a href="javascript:void(0);">按钮2list1</a></li>
+				<li><a href="javascript:void(0);">按钮2list2</a></li>
+				<li><a href="javascript:void(0);">按钮2list3</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="javascript:void(0);">按钮3</a>
+			<ul class="menu_List">
+				<li><a href="javascript:void(0);">按钮3list1</a></li>
+				<li><a href="javascript:void(0);">按钮3list2</a></li>
+				<li><a href="javascript:void(0);">按钮3list3</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>

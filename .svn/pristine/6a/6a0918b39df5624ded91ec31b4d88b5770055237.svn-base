@@ -1,0 +1,28 @@
+server:
+  port: 6003
+
+spring:
+  application:
+    name: cloud-paas-api-gateway
+  mvc:
+    favicon:
+      enabled: false
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+          ip-address: localhost
+          prefer-ip-address: true
+          tags: api-gateway-huangyan
+  redis:
+    host: localhost
+    port: 6379   
+
+zuul: 
+  sensitive-headers: "*"
+  routes: 
+    portal: 
+      path: /**
+      strip-prefix: true
+      service-id: cloud-paas-portal

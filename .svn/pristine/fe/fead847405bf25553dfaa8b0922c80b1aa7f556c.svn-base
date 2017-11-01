@@ -1,0 +1,14 @@
+(function(){
+	"use strict";
+	angular
+		.module("app.pageOne")
+		.service("pageOneService",pageOneService)
+	
+	function pageOneService() {
+		this.getDate = getDate;
+		
+		function getDate() {
+			
+		}
+	}
+})()

@@ -1,0 +1,14 @@
+<div id="section">
+	<div id="main">
+		<div id="slider">
+			<ul>
+				<li><a href="javascript:void(0)" data-ui-sref="pageOne">pageOne >></a></li>
+				<li><a href="javascript:void(0)" data-ui-sref="pageTwo">pageTwo >></a></li>
+				<li><a href="javascript:void(0)" data-ui-sref="pageTree">pageTree >></a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div data-ui-view="content"></div>
+		</div>
+	</div>
+</div>

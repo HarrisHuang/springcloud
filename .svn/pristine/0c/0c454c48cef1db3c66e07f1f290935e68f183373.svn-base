@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>智慧城市内部门户</title>
+
+    <!-- Custom CSS -->
+    <link href="/styles/css/custom.error.css" rel="stylesheet">
+
+
+</head>
+<body>
+<!-- Preloader -->
+
+<section id="wrapper" class="error-page">
+    <div class="error-box">
+        <div class="error-body text-center">
+            <h1 class="text-info">403</h1>
+            <h3 class="text-uppercase">亲，您没有权限访问该页面！</h3>
+            <p class="text-muted m-t-30 m-b-30 text-uppercase">您没有登录系统或者登录失效哦！</p>
+            <div class="m-b-40 text-uppercase"><span id="loginTime" style="color: red">10</span>秒后跳转到登录页面，或者<a href="/#/login" class="m-b-40">立即登录</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    (function () {
+        'use strict';
+        
+        var timer = 0,
+            time = 10 ,
+            timeEle = document.getElementById("loginTime");
+        
+        
+        function delayedLogin() {
+            timer = setTimeout(function () {
+                time--;
+                timeEle.innerText = time;
+                if(time === 0){
+                    clearTimeout(timer);
+                    window.location.href = "/#/login";
+                }else {
+                    delayedLogin();
+                }
+            }, 1000);
+        }
+
+        delayedLogin();
+    })()
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+(function(){
+	angular
+		.module("app.capp")
+		.config(function($stateProvider){
+			$stateProvider.state({
+				name: 'router1',
+			    url: '/router1',
+			    templateUrl: 'app/router1/views/router1.html'
+			});
+			$stateProvider.state({
+				name: 'router2',
+			    url: '/router2',
+			    templateUrl: 'app/router2/views/router2.html'
+			});
+		});
+})();

@@ -1,0 +1,168 @@
+/* 400,403,404,405,500,503页面专用（请勿修改） */
+h1,h2,h3,h4,h5,h6 {
+    color: #313131;
+    font-family: Arial;
+    margin: 10px 0;
+    font-weight: 300
+}
+
+h3 {
+    color: #313131;
+    font-family: Rubik,sans-serif;
+    margin: 10px 0;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 21px;
+
+}
+
+a{
+    text-decoration: none;
+}
+.text-white {
+    color: #fff
+}
+
+.text-danger {
+    color: #ff7676
+}
+
+.text-muted {
+    color: #8d9ea7
+}
+
+.text-warning {
+    color: #ffc36d
+}
+
+.text-success {
+    color: #53e69d
+}
+
+.text-info {
+    color: #2cabe3
+}
+
+.text-inverse {
+    color: #4c5667
+}
+
+.text-blue {
+    color: #02bec9
+}
+
+.text-primary,.text-purple {
+    color: #707cd2
+}
+
+.text-megna {
+    color: #01c0c8
+}
+
+.text-dark {
+    color: #313131!important
+}
+
+.m-b-30 {
+    margin-bottom: 30px!important;
+}
+
+.m-t-30 {
+    margin-top: 30px!important;
+}
+
+p {
+    line-height: 1.6;
+    margin: 0 0 10px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.error-box {
+    height: 100%;
+    position: fixed;
+    top: 20%;
+    width: 100%
+}
+
+.error-box .footer {
+    width: 100%;
+    left: 0;
+    right: 0
+}
+
+.error-body {
+    padding-top: 5%
+}
+
+.error-body h1 {
+    font-size: 210px;
+    font-weight: 900;
+    line-height: 210px
+}
+
+.wisdomPark-ui-btn-red,
+a.wisdomPark-ui-btn-red,
+.wisdomPark-ui-btn-green,
+a.wisdomPark-ui-btn-green,
+.wisdomPark-ui-btn-blue,
+a.wisdomPark-ui-btn-blue {
+    color: #fff;
+}
+
+.wisdomPark-ui-btn {
+    padding: 0px 12px;
+    min-width: 86px;
+    min-height: 32px;
+    font-size: 14px;
+    font-weight : normal;
+    line-height: 32px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: 0px;
+    border-radius: 4px;
+}
+
+.wisdomPark-ui-input-group .wisdomPark-ui-btn {
+    border-radius: 0px;
+}
+
+.wisdomPark-ui-btn,
+.wisdomPark-ui-btn:hover,
+.wisdomPark-ui-btn:active {
+    box-shadow : none;
+    left : 0;
+    top : 0;
+    background-color: #ea2929;
+    color: #fff;
+}
+
+.wisdomPark-ui-btn-lg {
+    /* 超大按钮 */
+    min-width: 126px;
+    min-height: 42px;
+    line-height: 42px;
+}
+
+.wisdomPark-ui-btn-red {
+    background-color: #ea2929;
+}
+
+.wisdomPark-ui-btn-green {
+    background-color: #09b70e;
+}
+
+.wisdomPark-ui-btn-blue {
+    background-color: #0096ff;
+}
+.wisdomPark-ui-btn-gray {
+    background-color: #808080;
+}
+.wisdomPark-ui-btn-white {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #dadada;
+}

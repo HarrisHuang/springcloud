@@ -1,0 +1,49 @@
+/**     
+ * @FileName: AccountNumberController.java   
+ * @Package:com.cloud.paas.portal.controller   
+ * @Description: TODO  
+ * @author: huangyan    
+ * @date:2017年9月1日 上午11:54:11   
+ */
+package com.cloud.paas.portal.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.annotation.Resource;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cloud.paas.common.controller.BaseController;
+import com.cloud.paas.portal.domain.condition.AccountNumberCondition;
+import com.cloud.paas.portal.service.AccountNumberService;
+
+/**  
+ * @ClassName: AccountNumberController   
+ * @Description: TODO  
+ * @author: huangyan  
+ * @date:2017年9月1日 上午11:54:11     
+ */
+@RestController
+@RequestMapping("account")
+@CrossOrigin
+public class AccountNumberController extends BaseController{
+	
+	@Resource
+	AccountNumberService accountNumberService;
+	
+	@RequestMapping(name="/list",method=RequestMethod.POST)
+	public Map<String,Object> list(@RequestBody AccountNumberCondition accountNumberCondition) {
+		Map<String,Object> result = new HashMap<String,Object>();
+		result.put("data", accountNumberService.list(accountNumberCondition));
+		result.put("total", accountNumberCondition.getTotalRecord());
+		
+		return result;
+	}
+	
+}

@@ -1,0 +1,9 @@
+<div data-ng-controller="pageOneController">
+	<h1>this is pageOne</h1>
+	<p>name：{{name}}</p>
+	<p><input data-ng-model="list" data-ng-list=","></p>
+	<p>
+		<span class="label" data-ng-class="picColor[$index%6]" data-ng-repeat="item in list track by $index">{{item}}</span>
+	</p>
+	<p><span class="text-danger">Data:</span>  {{data}}</p>
+</div>

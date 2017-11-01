@@ -1,0 +1,27 @@
+/**     
+ * @FileName: AccountNumberService.java   
+ * @Package:com.cloud.paas.portal.service   
+ * @Description: TODO  
+ * @author: huangyan    
+ * @date:2017年9月1日 下午2:47:34   
+ */
+package com.cloud.paas.portal.service;
+
+import java.util.List;
+
+import com.cloud.paas.portal.domain.AccountNumber;
+import com.cloud.paas.portal.domain.condition.AccountNumberCondition;
+
+/**  
+ * @ClassName: AccountNumberService   
+ * @Description: TODO  
+ * @author: huangyan  
+ * @date:2017年9月1日 下午2:47:34     
+ */
+public interface AccountNumberService {
+
+	
+	List<AccountNumber> list(AccountNumberCondition accountNumberCondition);
+
+	
+}

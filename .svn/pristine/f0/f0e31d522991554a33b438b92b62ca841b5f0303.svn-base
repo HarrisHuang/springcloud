@@ -1,0 +1,8 @@
+<div data-ng-controller="bootRouter1Controller">
+	<h1>this is router1</h1>
+	<p>name：{{name}}</p>
+	<p><input data-ng-model="list" data-ng-list=","></p>
+	<p>
+		<span class="label" data-ng-class="picColor[$index%6]" data-ng-repeat="item in list track by $index">{{item}}</span>
+	</p>
+</div>

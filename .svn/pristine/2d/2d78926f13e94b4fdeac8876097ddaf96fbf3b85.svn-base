@@ -1,0 +1,14 @@
+{
+	"app.core": {
+		"rely":["ui.router","oc.lazyLoad"]
+	},
+	"app.capp":{
+		"rely":[]
+	},
+	"app.layout":{
+		"rely":[]
+	},
+	"app.router": {
+		"rely":[]
+	}
+}

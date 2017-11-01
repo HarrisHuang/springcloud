@@ -1,0 +1,12 @@
+(function(){
+	"use strict";
+	angular
+		.module("app.capp")
+		.controller("bootRouter2Controller",bootRouter2Controller)
+
+	bootRouter2Controller.$inject = ["$scope","constant"];
+	
+	function bootRouter2Controller($scope,constant) {
+		$scope.name = constant.name == "Luffy" ? "Joker" : "Lucy";
+	}
+})()

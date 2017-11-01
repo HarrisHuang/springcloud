@@ -1,0 +1,12 @@
+<div style="height:1190px" data-ng-controller="bootRouter2Controller">
+	<h1>this is router2</h1>
+	<p>name：{{name}}</p>
+	<p>
+		<input type="text" data-ng-model="txt" data-ng-model-options="{updateOn:'default blur',debounce:{'default':2000,'blur':1000}}"/>
+	</p>
+	<p>
+		<input type="text" data-ng-model="test" class="form-control"/>
+	
+	</p>
+	<p><code>{{txt}}</code></p>
+</div>

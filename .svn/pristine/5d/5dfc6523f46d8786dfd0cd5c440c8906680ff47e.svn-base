@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+<head>
+<meta charset="UTF-8" >
+	<title>spring cloud test</title>
+		<!-- vendor css, don't modify -->
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/vendor.min.css?v=1.0">
+		<!-- global css, don't modify -->
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/global.min.css?v=1.0">
+		<!-- custom style css, can modify -->
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/custom.style.css">
+		
+</head>
+<body data-smart-device-detect
+		data-smart-fast-click
+		data-smart-layout
+		data-smart-page-title="spring cloud">
+
+		<div data-ui-view="root"  data-autoscroll="false"></div>
+
+		<script src="vendor/angular/angular.js"></script>	
+		<script src="vendor/angular/angular-ui-router.js"></script>	
+		spring cloud --portal
+	</body>
+</html>
