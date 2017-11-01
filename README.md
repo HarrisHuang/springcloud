@@ -14,13 +14,13 @@ step 2: windows 环境 启动consul
 
 	module   		port
 	
-1	portal   		6003
+1	portal 			6003
 
-2   api-gateway		80
+2   api-gateway			80
 
 3	admin			6004
 
-4   message-center	6005
+4   message-center		6005
 
 5	monitor			6006
 
